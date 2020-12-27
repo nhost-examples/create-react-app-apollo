@@ -1,7 +1,7 @@
 import React from "react";
 
-import { AddItem } from "components/add-item";
-import { ListItems } from "components/list-items";
+import { AddItem } from "components/app/add-item";
+import { ListItems } from "components/app/list-items";
 
 export function Dashboard() {
   return (
