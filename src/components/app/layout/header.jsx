@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gql from "graphql-tag";
-import { useQuery } from "@apollo/client";
+import { useQuery, gql } from "@apollo/client";
 
 import { auth } from "utils/nhost";
 

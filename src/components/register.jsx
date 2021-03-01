@@ -13,16 +13,22 @@ export function Register() {
     e.preventDefault();
 
     try {
-      await auth.register(email, password, {
-        display_name: displayName,
+      await auth.register({
+        email,
+        password,
+        options: {
+          userData: {
+            display_name: displayName,
+          },
+        },
       });
     } catch (error) {
       console.log(error);
       return alert("Registration failed");
     }
 
-    alert("Registration OK. Now login!");
-    history.push("/login");
+    alert("Registration OK. Logging you in...");
+    history.push("/");
   }
 
   return (

@@ -1,6 +1,5 @@
 import React from "react";
-import gql from "graphql-tag";
-import { useSubscription } from "@apollo/client";
+import { useSubscription, gql } from "@apollo/client";
 
 const GET_ITEMS = gql`
   subscription getItems {

@@ -12,7 +12,7 @@ export function Login() {
     e.preventDefault();
 
     try {
-      await auth.login(email, password);
+      await auth.login({ email, password });
     } catch (error) {
       console.log(error);
       return alert("login failed");

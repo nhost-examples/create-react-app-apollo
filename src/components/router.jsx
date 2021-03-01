@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AuthGate } from "components/auth-gate";
 import { Layout } from "components/app/layout/layout";
 import { Dashboard } from "components/app/dashboard";
+import { Settings } from "components/app/settings";
 
 import { Register } from "components/register";
 import { Login } from "components/login";
@@ -17,7 +18,7 @@ function RouterApp() {
             <Dashboard />
           </Route>
           <Route exact path="/settings">
-            <div>User settings</div>
+            <Settings />
           </Route>
         </Switch>
       </Layout>
